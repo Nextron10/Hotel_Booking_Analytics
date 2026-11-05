@@ -1,70 +1,89 @@
 # Hotel Booking Analytics
 
-Python, PostgreSQL and Power BI analysis of hotel revenue, cancellations and weather-related booking outcomes. The practice workbook contains 12,000 bookings; 11,460 remain eligible after the documented date and room checks.
+An analysis of hotel revenue, cancellations and weather-related booking outcomes using Python, PostgreSQL and Power BI. The project starts with 12,000 booking records and uses 11,460 eligible bookings after data-quality checks.
 
-![Executive overview](dashboards/previews/executive_overview.png)
+The highest cancellation rate is concentrated in a small group: Goa in July has 20 cancellations from 38 bookings. A broader scenario targeting bookings made more than 30 days ahead has a larger estimated impact, but neither scenario supports a five-percentage-point reduction across the platform.
 
-Open the [Power BI report](dashboards/Hotel_Booking_Analytics.pbix), [dashboard PDF](docs/Dashboard.pdf), [case study](docs/Case_Study.docx) or [project requirements](docs/Project_Requirements.docx).
+![Executive dashboard showing booking totals, revenue and cancellation rates](dashboards/previews/executive_overview.png)
 
-## Folder structure
+## Explore the project
+
+- [Dashboard PDF](docs/Dashboard.pdf): view all three report pages without Power BI.
+- [Power BI report](dashboards/Hotel_Booking_Analytics.pbix): explore the interactive report in Power BI Desktop.
+- [Case study](docs/Case_Study.docx): read the findings, calculations, recommendations and limitations.
+- [Project requirements](docs/Project_Requirements.docx): review the analytical questions and technical scope.
+
+## Key results
+
+| Metric | Result |
+|---|---:|
+| Eligible bookings | 11,460 |
+| Completed bookings | 8,848 |
+| Cancelled bookings | 2,267 |
+| No-shows | 345 |
+| Cancellation rate | 19.78% |
+| Realized revenue | INR 264,722,151.63 |
+| Bookings matched to weather | 926 |
+
+Bringing the cancellation rate of bookings made more than 30 days ahead down to the shorter-lead group's rate would prevent an estimated 154.72 cancellations, or 1.35 percentage points across the platform, at fixed booking volume. This is a scenario calculation; a deposit policy has not been tested.
+
+On days with at least 20 mm of precipitation, the combined cancellation and no-show rate is higher by 17.47 percentage points in Goa and 7.41 points in Manali. Weather is matched to the scheduled check-in date, so these comparisons do not establish why a booking was cancelled.
+
+## Repository structure
 
 ```text
 Hotel_Booking_Analytics/
-  README.md                   Project guide and setup
-  requirements.txt            Python dependencies
-  .vscode/extensions.json     Recommended VS Code extensions
-  python/                     Preparation, weather analysis and validation
+  README.md
+  requirements.txt
+  .vscode/extensions.json
+  python/                     Data preparation, weather analysis and validation
   sql/                        Schema, loading, business queries and exports
   data/
-    raw/                      Original workbook and API cache; local only
+    raw/                      Source workbook and API cache; excluded from Git
     cleaned/
       dashboard/              Four aggregate CSVs used by Power BI
-      validation/             Data checks and supporting results; local only
-      weather/                Detailed weather outputs; local only
-      *.csv                   Prepared and normalized records; local only
   dashboards/
     Hotel_Booking_Analytics.pbix
     previews/executive_overview.png
   docs/
-    Case_Study.docx            Findings, recommendations and explanations
-    Dashboard.pdf             All three dashboard pages
-    Project_Requirements.docx  Technical requirements
-    private/                  Interview guide; local only
-  archive/                    Superseded files; local only
+    Case_Study.docx
+    Dashboard.pdf
+    Project_Requirements.docx
 ```
 
-## Why the CSVs and image are included
+The four dashboard inputs have different purposes:
 
-Power BI imports the four files below from `data/cleaned/dashboard`. They are grouped summaries, not copies of the original workbook. Keep them in the repository so the report can refresh after its DataFolder parameter is updated.
+| CSV | Contents |
+|---|---|
+| `bookings.csv` | 480 groups by city, check-in month and booking channel; supplies revenue charts, booking metrics and the cancellation matrix |
+| `scenarios.csv` | Two estimates of cancellations prevented and their platform-wide impact |
+| `seasonality.csv` | 36 monthly groups for Goa, Manali and Kochi |
+| `weather.csv` | Four groups comparing heavy-precipitation days with other days in Goa and Manali |
 
-| File | Contents | Used for |
-|---|---|---|
-| `bookings.csv` | 480 city, month and channel groups | Executive metrics, revenue charts and cancellation matrix |
-| `scenarios.csv` | Two cancellation scenarios | Estimated intervention impact |
-| `seasonality.csv` | 36 city-month groups for Goa, Manali and Kochi | Seasonal cancellation comparison |
-| `weather.csv` | Four city and precipitation groups | Weather outcomes and sample sizes |
+## Methods and definitions
 
-The single PNG displays the executive dashboard directly on this GitHub page. The PBIX is the interactive report; `docs/Dashboard.pdf` lets visitors view all three pages without Power BI. Preparation tables, quality checks, API responses and detailed records are generated locally and excluded from Git. The source workbook is not included; the published aggregate inputs are sufficient to refresh the report, while rerunning the full pipeline requires the workbook.
+Python preserves the source workbook and flags date, room, review and pricing issues. The date and room checks exclude 540 unique bookings; some error counts overlap. Review fields on Cancelled bookings are cleared without dropping those bookings. The 35 pricing discrepancies are retained for reconciliation, and affected Completed amounts are excluded from primary revenue.
 
-## Run the analysis
+PostgreSQL separates customers, properties and bookings into three related tables. It enforces keys and stay/room constraints, calculates the cancellation scenarios, and uses RANK and LAG for the property-revenue and repeat-customer analyses. Power BI imports aggregate CSVs; it does not query PostgreSQL live.
 
-Install Python 3.12+, PostgreSQL and Power BI Desktop. VS Code offers the extensions listed in `.vscode/extensions.json`; no extra extension is required to run the scripts.
+Realized revenue includes only eligible Completed bookings with consistent amounts. Cancellation rate is Cancelled divided by all eligible bookings, including No-Show bookings in the denominator. The weather comparison uses a separate outcome combining Cancelled and No-Show. Rates are calculated from summed counts rather than averaged subgroup percentages. Month refers to the scheduled check-in month.
 
-Run these commands from the repository root:
+The literal loyalty value `None` is preserved, blank coupons and `NONE` are treated alike, and ratings are reported separately for customer segments with different scales. Properties are identified by `property_id` because names can repeat.
+
+## Run locally
+
+To view the results, open the dashboard PDF or PBIX. To refresh the PBIX after cloning, open **Home > Transform data > Manage Parameters**, set `DataFolder` to the absolute path of `data/cleaned/dashboard`, then select **Close & Apply**, **Refresh**, and **Save**. PostgreSQL is not required to view or refresh the published aggregate snapshot.
+
+To rerun the full analysis, use Python 3.12+, PostgreSQL and the original workbook. The source workbook, detailed booking records and API cache are excluded from this repository. Place the workbook at `data/raw/hotel_bookings.xlsx` and run these commands from the repository root:
 
 ```powershell
 python -m venv .venv
 .venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
-```
-
-Place the supplied workbook at `data/raw/hotel_bookings.xlsx`, then run:
-
-```powershell
 python python/01_prepare_data.py
 ```
 
-Create a PostgreSQL database called `hotel_booking_analytics`. With `psql` on PATH, run:
+Create a database named `hotel_booking_analytics`. With PostgreSQL's `psql` command on PATH, run the SQL files in order:
 
 ```powershell
 psql -h localhost -U postgres -d hotel_booking_analytics -v ON_ERROR_STOP=1 -f sql/01_create_tables.sql -f sql/02_load_data.sql -f sql/03_business_queries.sql -f sql/04_cancellation_analysis.sql -f sql/05_dashboard_views.sql -f sql/06_export_results.sql -o data/cleaned/validation/sql_results.txt
@@ -72,44 +91,26 @@ python python/02_weather_analysis.py
 python python/03_validate_outputs.py
 ```
 
-Enter your database password when prompted. The load script replaces the three project tables' rows in one transaction. Run it through `psql`, which supports the client-side `\copy` commands.
+Enter your own database password when prompted. The load script replaces the rows in the three project tables within one transaction. Run it through `psql`, which supports the client-side `\copy` commands. After regenerating the CSVs, refresh and save the Power BI report.
 
-After moving or cloning the project, open the PBIX and set **Transform data > Manage parameters > DataFolder** to that clone's absolute `data/cleaned/dashboard` path before refreshing. The saved report contains the aggregate snapshot and can be viewed without PostgreSQL. Database changes require a new SQL export and Power BI refresh; this is Import mode.
+The validator can also run against the four published CSVs without the workbook, database or API. It checks expected snapshot totals and selected consistency rules; it is not a general validator for unrelated datasets.
 
-## Results and definitions
+### Weather tool
 
-| Measure | Result |
-|---|---:|
-| Eligible bookings | 11,460 |
-| Completed | 8,848 / 77.21% |
-| Cancelled | 2,267 / 19.78% |
-| No-Show | 345 / 3.01% |
-| Realized revenue | INR 264,722,151.63 |
-| Weather-matched bookings | 926 |
+The weather script adds daily precipitation and maximum temperature to eligible Goa and Manali bookings. It makes one request per city for the required date range and joins the results on city and local check-in date, with a check that the join does not multiply booking rows.
 
-Revenue counts Completed bookings with valid amounts. Cancellation rate is Cancelled divided by all eligible bookings; No-Show is separate. Rates are recomputed from counts. Month means check-in month; lead time is check-in date minus booking date.
-
-Date/room errors exclude 540 unique bookings. Cancelled review fields are cleared without dropping those bookings. The 35 pricing discrepancies exclude affected Completed amounts from primary revenue while preserving otherwise valid cancellation records. Literal loyalty tier `None` is retained; blank coupons and `NONE` mean the same thing. Rating scales are reported separately by segment.
-
-The long-lead what-if estimates 154.72 fewer cancellations, or 1.35 platform percentage points at fixed volume. This does not support the illustrative five-point target. Deposit-policy effects are assumptions to test. Heavy-precipitation failed-booking gaps are +17.47 points for Goa and +7.41 for Manali; these are associations, not proof of cause.
-
-The report covers the executive overview, cancellation drivers and weather outcomes. The executive City filter changes its measures. Diagnostic baseline/scenario cards stay fixed and are labelled accordingly. The case study contains the full arithmetic, competing explanations, schema, SQL, index justification and limitations.
-
-## Weather tool quick guide
-
-```text
-Enriches eligible Goa and Manali bookings with Open-Meteo daily weather.
-Install the central requirements.txt packages and prepare the workbook first.
-Run python python/02_weather_analysis.py for live API requests.
-Add --cached to reuse responses in data/raw/weather after a successful live run.
-Design: one request per city/date range and a validated many-to-one date/city join.
-Limitation: city estimates, missing cancellation times and shared dates prevent causal claims.
+```powershell
+python python/02_weather_analysis.py
+# After a successful live run, reuse the saved responses:
+python python/02_weather_analysis.py --cached
 ```
 
-## Data and local files
+Responses and request logs are saved locally in `data/raw/weather`; detailed results are in `data/cleaned/weather`. A failed request or incomplete weather coverage returns a nonzero exit status. City-level weather estimates, missing cancellation times and shared weather dates limit interpretation.
 
-This is a historical practice-data case study. The workbook's redistribution licence has not been established, so source records and detailed outputs remain local. Only aggregate dashboard inputs are included in Git; they contain no customer names, customer IDs or booking IDs. The validator checks this scope and the known snapshot totals.
+## Data source and scope
 
-The single `archive/` folder preserves earlier layouts, original documents, duplicate reports, editable Power BI project definitions and development material. It is entirely ignored by Git. The original brief is preserved there unchanged; `docs/Project_Requirements.docx` is its neutral project version.
+The analysis uses a historical practice dataset. This repository includes only aggregate dashboard inputs, with no customer names, customer IDs or booking IDs. Running the complete pipeline requires the original workbook. Local environments, credentials, detailed outputs, the private interview guide and archived versions are excluded through `.gitignore`.
 
-Weather source: [Open-Meteo Historical Weather API](https://open-meteo.com/en/docs/historical-weather-api).
+Weather data comes from the [Open-Meteo Historical Weather API](https://open-meteo.com/en/docs/historical-weather-api). The comparisons describe this dataset and should be tested with further data before a policy is adopted.
+
+Prepared by Dhaerya Nauni
