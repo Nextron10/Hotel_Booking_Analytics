@@ -1,0 +1,35 @@
+# Previous versions and development material
+/archive/
+
+# Publish only aggregate inputs
+/data/raw/*
+!/data/raw/.gitkeep
+/data/cleaned/*
+!/data/cleaned/.gitkeep
+!/data/cleaned/dashboard/
+/docs/private/
+
+# Local environment and credentials
+.env
+.env.*
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+/.vscode/*
+!/.vscode/extensions.json
+*.code-workspace
+
+# Application caches and temporary files
+**/.pbi/
+**/localSettings.json
+**/cache.abf
+**/unappliedChanges.json
+*.tmp
+*.log
+*.zip
+~$*
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,5 @@
+property_city,condition_present,bookings,checkin_dates,cancellations,no_shows,failed_bookings,condition,cancellation_rate,no_show_rate,failed_booking_rate,weather_group
+Goa,False,372,206,75,15,90,heavy_precipitation,0.20161290322580644,0.04032258064516129,0.24193548387096775,Other days
+Goa,True,84,45,33,2,35,heavy_precipitation,0.39285714285714285,0.023809523809523808,0.4166666666666667,Heavy precipitation
+Manali,False,411,233,68,13,81,heavy_precipitation,0.1654501216545012,0.031630170316301706,0.19708029197080293,Other days
+Manali,True,59,34,13,3,16,heavy_precipitation,0.22033898305084745,0.05084745762711865,0.2711864406779661,Heavy precipitation

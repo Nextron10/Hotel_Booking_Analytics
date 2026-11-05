@@ -1,0 +1,481 @@
+property_city,booking_channel,checkin_month,bookings,completed,cancellations,no_shows,realized_revenue
+Bangalore,Corporate Portal,1,15,13,1,1,364457.62
+Bangalore,Direct Website,1,6,5,1,0,61307.72
+Bangalore,OTA,1,16,11,3,2,346124.18
+Bangalore,Travel Agent,1,8,8,0,0,137883.91
+Bangalore,Corporate Portal,2,12,8,4,0,124886.80
+Bangalore,Direct Website,2,8,5,3,0,87270.11
+Bangalore,OTA,2,20,18,2,0,417360.63
+Bangalore,Travel Agent,2,5,5,0,0,65467.39
+Bangalore,Corporate Portal,3,27,18,8,1,438624.01
+Bangalore,Direct Website,3,11,10,1,0,339327.35
+Bangalore,OTA,3,18,14,4,0,261907.62
+Bangalore,Travel Agent,3,10,8,2,0,125628.82
+Bangalore,Corporate Portal,4,15,12,3,0,222897.96
+Bangalore,Direct Website,4,10,9,1,0,88377.63
+Bangalore,OTA,4,18,15,2,1,310007.02
+Bangalore,Travel Agent,4,12,7,5,0,244358.94
+Bangalore,Corporate Portal,5,19,19,0,0,456108.15
+Bangalore,Direct Website,5,7,7,0,0,241662.35
+Bangalore,OTA,5,21,14,6,1,330957.83
+Bangalore,Travel Agent,5,5,4,1,0,112596.52
+Bangalore,Corporate Portal,6,13,10,3,0,206859.96
+Bangalore,Direct Website,6,11,9,1,1,134617.38
+Bangalore,OTA,6,15,10,4,1,304210.35
+Bangalore,Travel Agent,6,7,5,2,0,82960.72
+Bangalore,Corporate Portal,7,13,9,4,0,221999.05
+Bangalore,Direct Website,7,7,6,0,1,142224.16
+Bangalore,OTA,7,18,12,5,1,327982.40
+Bangalore,Travel Agent,7,8,6,2,0,97883.21
+Bangalore,Corporate Portal,8,15,12,3,0,181288.80
+Bangalore,Direct Website,8,6,3,3,0,39048.73
+Bangalore,OTA,8,14,10,3,1,187234.34
+Bangalore,Travel Agent,8,14,10,2,2,305938.29
+Bangalore,Corporate Portal,9,21,17,4,0,267912.07
+Bangalore,Direct Website,9,9,8,1,0,292039.79
+Bangalore,OTA,9,16,13,3,0,440891.94
+Bangalore,Travel Agent,9,11,8,3,0,166797.08
+Bangalore,Corporate Portal,10,9,5,3,1,127823.17
+Bangalore,Direct Website,10,10,7,2,1,334047.67
+Bangalore,OTA,10,18,14,3,1,274010.30
+Bangalore,Travel Agent,10,16,11,4,1,416764.71
+Bangalore,Corporate Portal,11,20,17,3,0,289086.88
+Bangalore,Direct Website,11,10,4,5,1,83920.19
+Bangalore,OTA,11,14,10,4,0,335654.65
+Bangalore,Travel Agent,11,13,9,4,0,198311.77
+Bangalore,Corporate Portal,12,16,15,1,0,312665.54
+Bangalore,Direct Website,12,1,1,0,0,12822.35
+Bangalore,OTA,12,14,9,3,2,174355.24
+Bangalore,Travel Agent,12,12,8,4,0,102623.46
+Chennai,Corporate Portal,1,26,22,3,1,443635.84
+Chennai,Direct Website,1,17,14,3,0,347449.25
+Chennai,OTA,1,36,25,11,0,1307716.80
+Chennai,Travel Agent,1,26,17,9,0,499262.27
+Chennai,Corporate Portal,2,26,21,5,0,619310.96
+Chennai,Direct Website,2,13,11,2,0,302934.58
+Chennai,OTA,2,38,22,13,3,596748.04
+Chennai,Travel Agent,2,24,21,2,1,395373.64
+Chennai,Corporate Portal,3,24,21,3,0,547279.87
+Chennai,Direct Website,3,15,12,3,0,304654.15
+Chennai,OTA,3,35,20,13,2,389018.99
+Chennai,Travel Agent,3,17,15,2,0,273716.70
+Chennai,Corporate Portal,4,29,21,7,1,600215.14
+Chennai,Direct Website,4,15,12,2,1,209876.98
+Chennai,OTA,4,34,28,6,0,902603.94
+Chennai,Travel Agent,4,20,14,4,2,426331.89
+Chennai,Corporate Portal,5,30,25,5,0,971528.27
+Chennai,Direct Website,5,11,9,2,0,168003.80
+Chennai,OTA,5,45,34,10,1,1284200.05
+Chennai,Travel Agent,5,27,23,3,1,896621.13
+Chennai,Corporate Portal,6,29,24,5,0,1166209.75
+Chennai,Direct Website,6,19,16,3,0,279665.75
+Chennai,OTA,6,35,23,11,1,773573.34
+Chennai,Travel Agent,6,26,21,3,2,416771.35
+Chennai,Corporate Portal,7,34,22,10,2,686342.74
+Chennai,Direct Website,7,26,22,4,0,612683.41
+Chennai,OTA,7,38,29,6,3,1043253.13
+Chennai,Travel Agent,7,23,16,6,1,485715.31
+Chennai,Corporate Portal,8,29,21,8,0,700190.95
+Chennai,Direct Website,8,22,22,0,0,471845.16
+Chennai,OTA,8,39,31,8,0,515972.22
+Chennai,Travel Agent,8,26,20,3,3,508396.17
+Chennai,Corporate Portal,9,28,27,1,0,569418.58
+Chennai,Direct Website,9,13,11,1,1,309683.29
+Chennai,OTA,9,41,33,6,2,1160271.39
+Chennai,Travel Agent,9,17,15,2,0,393709.51
+Chennai,Corporate Portal,10,32,22,9,1,525697.15
+Chennai,Direct Website,10,24,21,2,1,366148.69
+Chennai,OTA,10,39,29,10,0,1427982.43
+Chennai,Travel Agent,10,15,11,4,0,456121.08
+Chennai,Corporate Portal,11,34,24,8,2,759204.15
+Chennai,Direct Website,11,16,14,1,1,408246.99
+Chennai,OTA,11,40,31,7,2,730853.63
+Chennai,Travel Agent,11,13,10,3,0,216788.16
+Chennai,Corporate Portal,12,34,25,8,1,852505.06
+Chennai,Direct Website,12,16,14,2,0,470794.39
+Chennai,OTA,12,43,32,11,0,558982.28
+Chennai,Travel Agent,12,24,21,3,0,586993.53
+Delhi,Corporate Portal,1,23,18,5,0,791004.33
+Delhi,Direct Website,1,22,20,2,0,539687.91
+Delhi,OTA,1,38,33,5,0,1443438.25
+Delhi,Travel Agent,1,15,13,1,1,271965.72
+Delhi,Corporate Portal,2,20,16,4,0,362629.35
+Delhi,Direct Website,2,18,15,3,0,386081.92
+Delhi,OTA,2,26,24,1,1,595402.86
+Delhi,Travel Agent,2,27,19,6,2,747760.02
+Delhi,Corporate Portal,3,40,29,7,4,667929.30
+Delhi,Direct Website,3,20,17,3,0,363670.97
+Delhi,OTA,3,41,30,9,2,620335.61
+Delhi,Travel Agent,3,15,13,2,0,351061.91
+Delhi,Corporate Portal,4,36,30,5,1,941988.12
+Delhi,Direct Website,4,23,21,2,0,445793.35
+Delhi,OTA,4,41,32,9,0,1189622.28
+Delhi,Travel Agent,4,20,9,9,2,140177.41
+Delhi,Corporate Portal,5,25,21,3,1,728483.30
+Delhi,Direct Website,5,21,14,6,1,572789.92
+Delhi,OTA,5,38,30,8,0,862388.84
+Delhi,Travel Agent,5,23,19,3,1,436758.34
+Delhi,Corporate Portal,6,28,20,8,0,539153.23
+Delhi,Direct Website,6,16,15,1,0,745252.97
+Delhi,OTA,6,30,22,8,0,665100.11
+Delhi,Travel Agent,6,30,21,8,1,496140.19
+Delhi,Corporate Portal,7,39,27,9,3,662361.38
+Delhi,Direct Website,7,22,19,2,1,395401.27
+Delhi,OTA,7,42,30,12,0,915744.58
+Delhi,Travel Agent,7,25,23,1,1,444362.57
+Delhi,Corporate Portal,8,26,23,3,0,788413.17
+Delhi,Direct Website,8,14,8,3,3,310455.59
+Delhi,OTA,8,32,22,9,1,756665.31
+Delhi,Travel Agent,8,18,17,1,0,435760.22
+Delhi,Corporate Portal,9,35,29,6,0,1047200.48
+Delhi,Direct Website,9,21,16,5,0,323182.86
+Delhi,OTA,9,44,35,9,0,806633.95
+Delhi,Travel Agent,9,22,18,4,0,360394.50
+Delhi,Corporate Portal,10,33,25,8,0,592454.97
+Delhi,Direct Website,10,24,20,3,1,982586.63
+Delhi,OTA,10,42,27,13,2,1168260.91
+Delhi,Travel Agent,10,21,18,3,0,594578.48
+Delhi,Corporate Portal,11,29,22,6,1,942269.37
+Delhi,Direct Website,11,17,12,5,0,322009.12
+Delhi,OTA,11,39,26,11,2,909273.89
+Delhi,Travel Agent,11,19,14,5,0,268648.42
+Delhi,Corporate Portal,12,31,22,8,1,440872.05
+Delhi,Direct Website,12,18,15,3,0,442721.18
+Delhi,OTA,12,47,33,12,2,1116198.14
+Delhi,Travel Agent,12,25,21,4,0,573440.56
+Goa,Corporate Portal,1,9,7,2,0,285545.27
+Goa,Direct Website,1,4,4,0,0,208753.18
+Goa,OTA,1,10,9,1,0,378198.57
+Goa,Travel Agent,1,5,4,0,1,153401.97
+Goa,Corporate Portal,2,11,11,0,0,484058.18
+Goa,Direct Website,2,3,1,1,1,25064.16
+Goa,OTA,2,8,5,1,2,207086.10
+Goa,Travel Agent,2,5,3,2,0,187997.69
+Goa,Corporate Portal,3,15,10,4,1,568977.04
+Goa,Direct Website,3,10,10,0,0,194474.53
+Goa,OTA,3,9,8,1,0,133962.89
+Goa,Travel Agent,3,9,5,4,0,131488.61
+Goa,Corporate Portal,4,13,10,3,0,317033.44
+Goa,Direct Website,4,7,4,3,0,184356.76
+Goa,OTA,4,8,7,0,1,170448.51
+Goa,Travel Agent,4,9,8,1,0,292882.30
+Goa,Corporate Portal,5,9,6,1,2,284291.19
+Goa,Direct Website,5,4,3,1,0,51592.76
+Goa,OTA,5,10,7,3,0,146738.16
+Goa,Travel Agent,5,8,5,3,0,430072.71
+Goa,Corporate Portal,6,13,9,4,0,122358.78
+Goa,Direct Website,6,6,4,2,0,52807.94
+Goa,OTA,6,11,8,3,0,129607.17
+Goa,Travel Agent,6,5,3,2,0,80770.27
+Goa,Corporate Portal,7,11,3,8,0,52272.27
+Goa,Direct Website,7,10,3,7,0,102659.09
+Goa,OTA,7,8,4,4,0,29723.45
+Goa,Travel Agent,7,9,6,1,2,93621.37
+Goa,Corporate Portal,8,8,5,3,0,94453.45
+Goa,Direct Website,8,6,2,4,0,24536.93
+Goa,OTA,8,28,19,9,0,461311.75
+Goa,Travel Agent,8,10,5,5,0,123251.82
+Goa,Corporate Portal,9,15,9,3,3,219358.19
+Goa,Direct Website,9,9,9,0,0,417516.49
+Goa,OTA,9,14,13,1,0,226232.66
+Goa,Travel Agent,9,6,5,1,0,176623.24
+Goa,Corporate Portal,10,17,15,2,0,620669.24
+Goa,Direct Website,10,4,4,0,0,90787.43
+Goa,OTA,10,19,13,6,0,392421.36
+Goa,Travel Agent,10,1,1,0,0,17103.57
+Goa,Corporate Portal,11,21,17,3,1,745787.52
+Goa,Direct Website,11,7,5,1,1,183633.44
+Goa,OTA,11,9,5,4,0,114863.11
+Goa,Travel Agent,11,7,7,0,0,208771.94
+Goa,Corporate Portal,12,12,11,1,0,705725.70
+Goa,Direct Website,12,5,4,0,1,205297.74
+Goa,OTA,12,13,9,3,1,255562.84
+Goa,Travel Agent,12,6,6,0,0,204487.76
+Jaipur,Corporate Portal,1,28,20,8,0,344659.25
+Jaipur,Direct Website,1,27,21,6,0,239572.67
+Jaipur,OTA,1,35,26,8,1,656445.16
+Jaipur,Travel Agent,1,23,22,1,0,181419.76
+Jaipur,Corporate Portal,2,24,16,7,1,372253.58
+Jaipur,Direct Website,2,20,17,2,1,245234.45
+Jaipur,OTA,2,31,20,9,2,262959.01
+Jaipur,Travel Agent,2,26,23,2,1,518841.11
+Jaipur,Corporate Portal,3,23,17,6,0,333321.51
+Jaipur,Direct Website,3,12,10,1,1,162640.69
+Jaipur,OTA,3,36,27,9,0,458658.40
+Jaipur,Travel Agent,3,24,21,3,0,368408.52
+Jaipur,Corporate Portal,4,24,19,5,0,348178.62
+Jaipur,Direct Website,4,20,16,4,0,196128.01
+Jaipur,OTA,4,39,29,10,0,404301.91
+Jaipur,Travel Agent,4,25,22,3,0,429648.01
+Jaipur,Corporate Portal,5,31,21,8,2,294627.61
+Jaipur,Direct Website,5,17,13,4,0,274212.66
+Jaipur,OTA,5,34,28,6,0,327967.19
+Jaipur,Travel Agent,5,20,14,6,0,240304.75
+Jaipur,Corporate Portal,6,20,15,5,0,282658.81
+Jaipur,Direct Website,6,17,14,1,2,202276.06
+Jaipur,OTA,6,40,30,10,0,493786.94
+Jaipur,Travel Agent,6,17,14,3,0,182219.26
+Jaipur,Corporate Portal,7,20,14,4,2,184671.26
+Jaipur,Direct Website,7,18,16,2,0,326807.13
+Jaipur,OTA,7,37,31,5,1,498131.23
+Jaipur,Travel Agent,7,22,15,7,0,270281.83
+Jaipur,Corporate Portal,8,23,18,5,0,410948.14
+Jaipur,Direct Website,8,24,21,2,1,478009.46
+Jaipur,OTA,8,40,35,4,1,598849.41
+Jaipur,Travel Agent,8,23,18,5,0,747445.24
+Jaipur,Corporate Portal,9,30,22,7,1,419624.29
+Jaipur,Direct Website,9,24,21,2,1,278536.68
+Jaipur,OTA,9,31,25,5,1,249152.27
+Jaipur,Travel Agent,9,15,14,1,0,230702.37
+Jaipur,Corporate Portal,10,23,17,5,1,263077.81
+Jaipur,Direct Website,10,16,9,6,1,171033.35
+Jaipur,OTA,10,36,24,9,3,469521.94
+Jaipur,Travel Agent,10,30,24,5,1,453519.34
+Jaipur,Corporate Portal,11,30,22,7,1,728598.24
+Jaipur,Direct Website,11,22,13,7,2,274814.75
+Jaipur,OTA,11,33,21,11,1,700800.27
+Jaipur,Travel Agent,11,28,24,3,1,477373.70
+Jaipur,Corporate Portal,12,33,29,4,0,419151.34
+Jaipur,Direct Website,12,19,17,2,0,382167.48
+Jaipur,OTA,12,29,23,6,0,818054.48
+Jaipur,Travel Agent,12,23,19,4,0,551901.26
+Kochi,Corporate Portal,1,37,30,7,0,819830.72
+Kochi,Direct Website,1,31,26,5,0,563546.09
+Kochi,OTA,1,44,33,8,3,875422.22
+Kochi,Travel Agent,1,25,23,2,0,726593.89
+Kochi,Corporate Portal,2,31,25,5,1,781581.94
+Kochi,Direct Website,2,23,19,4,0,778504.19
+Kochi,OTA,2,60,45,11,4,1005639.78
+Kochi,Travel Agent,2,38,27,9,2,879721.93
+Kochi,Corporate Portal,3,48,36,10,2,1281421.01
+Kochi,Direct Website,3,25,23,2,0,571918.50
+Kochi,OTA,3,59,43,14,2,1630131.16
+Kochi,Travel Agent,3,40,31,5,4,835897.77
+Kochi,Corporate Portal,4,45,34,11,0,1026058.17
+Kochi,Direct Website,4,39,30,9,0,762301.18
+Kochi,OTA,4,48,39,9,0,1057778.95
+Kochi,Travel Agent,4,31,27,3,1,1075042.43
+Kochi,Corporate Portal,5,44,33,10,1,1184199.68
+Kochi,Direct Website,5,23,20,2,1,720618.55
+Kochi,OTA,5,67,51,14,2,1368803.27
+Kochi,Travel Agent,5,28,22,6,0,856287.40
+Kochi,Corporate Portal,6,36,32,4,0,1350124.75
+Kochi,Direct Website,6,28,21,7,0,563237.11
+Kochi,OTA,6,44,30,11,3,710029.09
+Kochi,Travel Agent,6,32,24,8,0,579082.37
+Kochi,Corporate Portal,7,56,43,12,1,2042045.81
+Kochi,Direct Website,7,29,26,3,0,626899.02
+Kochi,OTA,7,53,42,11,0,1331361.47
+Kochi,Travel Agent,7,32,20,11,1,447789.29
+Kochi,Corporate Portal,8,32,24,8,0,608649.89
+Kochi,Direct Website,8,22,21,1,0,414792.87
+Kochi,OTA,8,44,37,6,1,912809.25
+Kochi,Travel Agent,8,28,23,4,1,519169.99
+Kochi,Corporate Portal,9,50,32,15,3,1121480.05
+Kochi,Direct Website,9,19,16,3,0,462274.62
+Kochi,OTA,9,35,31,2,2,683055.67
+Kochi,Travel Agent,9,30,23,6,1,829433.32
+Kochi,Corporate Portal,10,47,39,8,0,1274503.72
+Kochi,Direct Website,10,27,18,7,2,777037.39
+Kochi,OTA,10,52,39,12,1,986750.61
+Kochi,Travel Agent,10,29,22,5,2,506817.70
+Kochi,Corporate Portal,11,53,37,15,1,1662894.61
+Kochi,Direct Website,11,26,15,10,1,434982.81
+Kochi,OTA,11,45,30,14,1,957002.35
+Kochi,Travel Agent,11,35,25,7,3,636067.70
+Kochi,Corporate Portal,12,58,50,8,0,1150726.90
+Kochi,Direct Website,12,43,38,4,1,1114789.66
+Kochi,OTA,12,53,37,14,2,910329.69
+Kochi,Travel Agent,12,38,31,7,0,843875.47
+Manali,Corporate Portal,1,21,16,4,1,888838.11
+Manali,Direct Website,1,6,5,1,0,297054.16
+Manali,OTA,1,17,11,4,2,584083.14
+Manali,Travel Agent,1,9,9,0,0,484735.40
+Manali,Corporate Portal,2,14,9,4,1,320985.38
+Manali,Direct Website,2,10,8,1,1,423601.79
+Manali,OTA,2,8,8,0,0,524264.70
+Manali,Travel Agent,2,11,10,1,0,667733.82
+Manali,Corporate Portal,3,17,14,3,0,663356.63
+Manali,Direct Website,3,6,6,0,0,198439.74
+Manali,OTA,3,11,6,5,0,257192.90
+Manali,Travel Agent,3,4,4,0,0,234473.15
+Manali,Corporate Portal,4,12,11,0,1,477703.25
+Manali,Direct Website,4,8,7,1,0,248886.08
+Manali,OTA,4,14,11,3,0,523423.54
+Manali,Travel Agent,4,11,9,2,0,471340.05
+Manali,Corporate Portal,5,8,7,1,0,255567.23
+Manali,Direct Website,5,3,2,1,0,61437.88
+Manali,OTA,5,17,13,3,1,597256.13
+Manali,Travel Agent,5,18,16,2,0,545822.59
+Manali,Corporate Portal,6,7,6,1,0,334661.18
+Manali,Direct Website,6,4,4,0,0,150965.01
+Manali,OTA,6,13,12,1,0,568581.95
+Manali,Travel Agent,6,6,5,1,0,244008.29
+Manali,Corporate Portal,7,9,7,2,0,295757.85
+Manali,Direct Website,7,6,3,3,0,168766.29
+Manali,OTA,7,10,6,3,1,298817.14
+Manali,Travel Agent,7,6,6,0,0,251265.35
+Manali,Corporate Portal,8,8,6,1,1,373878.18
+Manali,Direct Website,8,7,7,0,0,230682.03
+Manali,OTA,8,13,10,2,1,506886.50
+Manali,Travel Agent,8,5,4,1,0,123889.61
+Manali,Corporate Portal,9,8,7,1,0,289616.59
+Manali,Direct Website,9,14,12,1,1,466833.35
+Manali,OTA,9,15,8,7,0,291122.13
+Manali,Travel Agent,9,7,5,1,1,269953.00
+Manali,Corporate Portal,10,7,4,1,2,272256.81
+Manali,Direct Website,10,7,5,2,0,209236.42
+Manali,OTA,10,11,9,2,0,292722.94
+Manali,Travel Agent,10,2,0,1,1,0
+Manali,Corporate Portal,11,4,3,1,0,269527.01
+Manali,Direct Website,11,6,4,2,0,207103.51
+Manali,OTA,11,13,9,3,1,835108.04
+Manali,Travel Agent,11,17,15,2,0,632408.78
+Manali,Corporate Portal,12,15,12,3,0,763178.98
+Manali,Direct Website,12,6,6,0,0,193041.06
+Manali,OTA,12,10,7,3,0,301029.50
+Manali,Travel Agent,12,9,9,0,0,423143.79
+Mumbai,Corporate Portal,1,51,42,5,4,1958738.45
+Mumbai,Direct Website,1,15,11,4,0,268997.74
+Mumbai,OTA,1,44,36,8,0,768150.23
+Mumbai,Travel Agent,1,31,24,5,2,947787.14
+Mumbai,Corporate Portal,2,43,28,11,4,791485.18
+Mumbai,Direct Website,2,30,26,4,0,833291.20
+Mumbai,OTA,2,59,37,20,2,1286171.56
+Mumbai,Travel Agent,2,35,24,10,1,914478.62
+Mumbai,Corporate Portal,3,37,30,5,2,840167.20
+Mumbai,Direct Website,3,34,25,7,2,1133986.65
+Mumbai,OTA,3,61,46,13,2,1821694.01
+Mumbai,Travel Agent,3,29,23,6,0,754297.13
+Mumbai,Corporate Portal,4,41,33,6,2,742294.14
+Mumbai,Direct Website,4,36,31,3,2,882230.27
+Mumbai,OTA,4,63,49,12,2,1640923.15
+Mumbai,Travel Agent,4,35,29,5,1,867722.67
+Mumbai,Corporate Portal,5,41,33,6,2,853500.44
+Mumbai,Direct Website,5,24,19,5,0,736229.50
+Mumbai,OTA,5,59,47,11,1,1437625.53
+Mumbai,Travel Agent,5,27,23,4,0,1118012.94
+Mumbai,Corporate Portal,6,43,37,6,0,1024221.84
+Mumbai,Direct Website,6,22,18,3,1,588854.92
+Mumbai,OTA,6,60,45,14,1,1417406.67
+Mumbai,Travel Agent,6,32,24,6,2,758354.53
+Mumbai,Corporate Portal,7,38,29,9,0,947179.82
+Mumbai,Direct Website,7,33,23,10,0,586764.64
+Mumbai,OTA,7,49,41,8,0,1675891.84
+Mumbai,Travel Agent,7,35,28,6,1,616113.15
+Mumbai,Corporate Portal,8,42,30,11,1,1411777.58
+Mumbai,Direct Website,8,29,23,4,2,562650.37
+Mumbai,OTA,8,59,45,10,4,1486664.90
+Mumbai,Travel Agent,8,43,32,9,2,877687.64
+Mumbai,Corporate Portal,9,49,41,7,1,1039167.07
+Mumbai,Direct Website,9,32,22,9,1,614901.83
+Mumbai,OTA,9,48,33,15,0,1673613.44
+Mumbai,Travel Agent,9,27,23,4,0,650188.58
+Mumbai,Corporate Portal,10,46,37,6,3,1538955.44
+Mumbai,Direct Website,10,23,22,1,0,914399.95
+Mumbai,OTA,10,72,57,13,2,1953556.13
+Mumbai,Travel Agent,10,31,25,4,2,734113.70
+Mumbai,Corporate Portal,11,38,28,9,1,920290.83
+Mumbai,Direct Website,11,30,26,4,0,756775.62
+Mumbai,OTA,11,52,34,13,5,1189203.76
+Mumbai,Travel Agent,11,33,26,6,1,803231.49
+Mumbai,Corporate Portal,12,41,31,9,1,809754.91
+Mumbai,Direct Website,12,20,17,3,0,780395.08
+Mumbai,OTA,12,58,40,17,1,1352923.68
+Mumbai,Travel Agent,12,29,22,7,0,480929.89
+Pune,Corporate Portal,1,33,26,7,0,598625.63
+Pune,Direct Website,1,17,16,1,0,556376.42
+Pune,OTA,1,28,16,10,2,597363.22
+Pune,Travel Agent,1,25,20,3,2,534822.94
+Pune,Corporate Portal,2,29,21,6,2,463070.87
+Pune,Direct Website,2,15,11,4,0,238165.70
+Pune,OTA,2,35,26,8,1,593015.23
+Pune,Travel Agent,2,16,10,6,0,254613.41
+Pune,Corporate Portal,3,25,17,8,0,398248.10
+Pune,Direct Website,3,24,18,3,3,410840.18
+Pune,OTA,3,26,17,7,2,524603.57
+Pune,Travel Agent,3,26,21,5,0,699481.97
+Pune,Corporate Portal,4,29,22,6,1,546795.70
+Pune,Direct Website,4,14,13,1,0,302679.43
+Pune,OTA,4,36,30,4,2,1088629.25
+Pune,Travel Agent,4,18,15,3,0,249220.58
+Pune,Corporate Portal,5,26,17,8,1,468524.10
+Pune,Direct Website,5,23,16,5,2,446256.29
+Pune,OTA,5,39,29,9,1,603729.74
+Pune,Travel Agent,5,21,18,3,0,821323.84
+Pune,Corporate Portal,6,31,25,5,1,706779.70
+Pune,Direct Website,6,9,8,1,0,300189.56
+Pune,OTA,6,32,27,2,3,921540.85
+Pune,Travel Agent,6,17,12,2,3,279502.28
+Pune,Corporate Portal,7,26,18,6,2,445757.75
+Pune,Direct Website,7,15,12,2,1,314487.55
+Pune,OTA,7,30,22,7,1,489037.81
+Pune,Travel Agent,7,20,17,3,0,304785.71
+Pune,Corporate Portal,8,33,26,6,1,739965.76
+Pune,Direct Website,8,15,13,2,0,335500.68
+Pune,OTA,8,23,19,3,1,357362.05
+Pune,Travel Agent,8,27,20,6,1,634268.13
+Pune,Corporate Portal,9,30,24,5,1,1009703.24
+Pune,Direct Website,9,16,14,2,0,189264.41
+Pune,OTA,9,25,18,7,0,519206.02
+Pune,Travel Agent,9,27,21,5,1,444200.51
+Pune,Corporate Portal,10,33,26,7,0,773873.02
+Pune,Direct Website,10,22,20,2,0,438046.46
+Pune,OTA,10,40,32,8,0,697365.99
+Pune,Travel Agent,10,15,10,4,1,202900.50
+Pune,Corporate Portal,11,32,24,7,1,909920.49
+Pune,Direct Website,11,18,15,2,1,290280.20
+Pune,OTA,11,32,29,3,0,651893.73
+Pune,Travel Agent,11,19,16,2,1,460988.75
+Pune,Corporate Portal,12,31,23,8,0,770336.91
+Pune,Direct Website,12,14,9,4,1,149887.83
+Pune,OTA,12,36,26,8,2,471991.33
+Pune,Travel Agent,12,27,24,2,1,439579.68
+Udaipur,Corporate Portal,1,29,20,8,1,998682.08
+Udaipur,Direct Website,1,14,10,2,2,573715.60
+Udaipur,OTA,1,19,14,5,0,335543.36
+Udaipur,Travel Agent,1,17,12,4,1,895924.89
+Udaipur,Corporate Portal,2,18,16,2,0,540468.16
+Udaipur,Direct Website,2,11,11,0,0,191983.37
+Udaipur,OTA,2,36,25,9,2,586831.52
+Udaipur,Travel Agent,2,17,12,2,3,335977.16
+Udaipur,Corporate Portal,3,26,21,4,1,493500.87
+Udaipur,Direct Website,3,13,11,2,0,193159.53
+Udaipur,OTA,3,40,33,7,0,1485607.17
+Udaipur,Travel Agent,3,15,10,4,1,249204.30
+Udaipur,Corporate Portal,4,20,12,7,1,279542.08
+Udaipur,Direct Website,4,19,18,1,0,556960.07
+Udaipur,OTA,4,29,22,6,1,577360.46
+Udaipur,Travel Agent,4,21,14,7,0,431094.52
+Udaipur,Corporate Portal,5,26,20,5,1,879797.36
+Udaipur,Direct Website,5,16,12,2,2,571308.77
+Udaipur,OTA,5,33,27,6,0,1214251.34
+Udaipur,Travel Agent,5,22,20,2,0,798633.80
+Udaipur,Corporate Portal,6,33,28,4,1,706334.03
+Udaipur,Direct Website,6,13,7,4,2,129191.61
+Udaipur,OTA,6,32,28,4,0,1112018.34
+Udaipur,Travel Agent,6,25,20,4,1,413139.61
+Udaipur,Corporate Portal,7,26,22,4,0,1137913.14
+Udaipur,Direct Website,7,11,10,0,1,88300.65
+Udaipur,OTA,7,35,28,7,0,646575.46
+Udaipur,Travel Agent,7,22,18,4,0,960459.62
+Udaipur,Corporate Portal,8,23,17,6,0,708467.91
+Udaipur,Direct Website,8,18,13,5,0,424894.64
+Udaipur,OTA,8,33,23,8,2,729598.51
+Udaipur,Travel Agent,8,11,9,2,0,407341.25
+Udaipur,Corporate Portal,9,35,27,7,1,813332.33
+Udaipur,Direct Website,9,26,21,5,0,625471.42
+Udaipur,OTA,9,39,25,12,2,1177673.76
+Udaipur,Travel Agent,9,23,17,4,2,575619.76
+Udaipur,Corporate Portal,10,18,13,4,1,595482.34
+Udaipur,Direct Website,10,15,11,4,0,408316.53
+Udaipur,OTA,10,38,29,8,1,1065905.46
+Udaipur,Travel Agent,10,15,13,2,0,1173689.64
+Udaipur,Corporate Portal,11,26,19,6,1,762329.35
+Udaipur,Direct Website,11,17,12,4,1,253443.87
+Udaipur,OTA,11,30,20,10,0,642673.64
+Udaipur,Travel Agent,11,19,14,4,1,1083160.02
+Udaipur,Corporate Portal,12,20,18,2,0,742898.60
+Udaipur,Direct Website,12,9,6,1,2,131825.98
+Udaipur,OTA,12,35,24,9,2,621462.48
+Udaipur,Travel Agent,12,15,13,2,0,239647.98
